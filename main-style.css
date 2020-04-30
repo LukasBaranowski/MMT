@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+  
+:root {
+    --primary-color: rgb(42, 216, 255);;
+    --dark-color: #676767;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: rgb(0, 0, 0);
+    color: rgb(31, 29, 29)
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+p { /*1rem === 16px*/
+    margin: .5rem 0;
+}
+img {
+    width: 100%
+}
+.showcase {
+    width: 100%;
+    height: 79vh;
+    background: #000;
+}
+.showcase:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    z-index: 1;
+    background: rgba(0, 0, 0, .4);
+    box-shadow: inset 50px 30px 120px #000000, inset -50px -30px 120px #000000;
+}
+.showcase-top {
+    position: relative;
+    height: 20px;
+    z-index: 2;
+}
+/*.showcase-top img {
+    cursor: pointer;
+    width: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}*/
+/*
+.showcase-top a {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}*/
+.showcase-contnet {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20rem;
+}
+.showcase-contnet h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    margin: 0 0 2rem;
+    position: relative;
+    top: 150px;
+    z-index: 10;
+}
+/*
+.showcase-contnet p {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    margin: 0 0 2rem;
+}*/
+/**************Tabs***************/
+.tabs {
+    color: var(--dark-color);
+    padding-top: 1rem;
+    border-bottom: 3px solid #3d3d3d;
+    border-right: none;
+    background: rgb(22, 21, 21);
+}
+.tabs .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.tabs p {
+    font-size: 1.2rem;
+    padding-top: 0.5rem
+}
+.tabs .container > div /* ">" === direct div*/ {
+    padding: 1.5rem 0;;
+}
+.tabs .container > div:hover {
+    cursor: pointer;
+    color: #fff;
+}
+.tab-border {
+   border-bottom: var(--primary-color) 4px solid;
+}
+/***********Container***********/
+.container {
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+/**********Tab content***********/
+.tab-content {
+    padding: 0 2rem;
+    background: #333;
+    color: #fff;
+    z-index: 5;
+    box-shadow: inset 30px 20px 100px #000000, inset -30px -20px 100px #000000;
+}
+
+/*****Hide tabs initially*****/
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+    display: none;
+}
+.show {
+    display: block !important;
+}
+#tab-1-content .tab-1-content-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem 15rem;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    min-height: 70vh;
+}
+#tab-2-content .tab-2-content-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+#tab-2-content .tab-2-content-bottom {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+/*Awesome Table if needed*/
+/*.table {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.table thead th {
+    text-transform: uppercase;
+    padding: .8rem;
+}
+.table tbody tr td {
+    padding: .8rem 1.2rem;
+    color: #999;
+    text-align: center;
+}
+.table tbody tr td:first-child{
+    text-align: left;
+}
+.table tbody tr:nth-child(odd) {
+    background: #222;
+}*/
+/************footer***************/
+.footer {
+    max-width: 75%;
+    margin: 1rem auto;
+    overflow: auto;
+}
+.footer, .footer a {
+    color: #999;
+    font-size: .9rem;
+}
+.footer p {
+    margin-bottom: 1.5rem;
+}
+.footer .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+.footer li {
+    line-height: 1.9;
+}
+
+/***********text style************/
+.text-xl {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.text-lg {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.text-center{
+    text-align: center;
+    padding-top: 2rem;
+}
+.text-dark {
+    color: #999;
+}
+.text-md {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+/*************Buttons*************/
+
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #ffffff;
+    padding: .4rem 1.3rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    outline: none;
+    background: linear-gradient(0deg, #6dd1ff, #20b7ff);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .45), inset 2px 5px 35px rgba(0,0,0,.5);
+    border-radius: 2px;
+}
+.btn:hover {
+    opacity: .9;
+}
+.btn-rounded {
+    border-radius: 5px;
+} 
+.btn-xl {
+    font-size: 1.3rem;
+    padding: 1rem 1.3rem;
+    text-transform: uppercase;
+}
+.btn-lg {
+	font-size: 1rem;
+	padding: 0.8rem 1.3rem;
+	text-transform: uppercase;
+}
+@media(max-width: 960px) {
+    .showcase {
+        height: 70vh;
+    }
+    .hide-sm {
+        display: none;
+    }
+    .showcase-top img {
+        top: 5%;
+        left: 3%;
+        transform: translateX(-20px) translateY(-20px);
+    }
+    .showcase-contnet {
+        margin: 6rem 4rem
+    }
+    .showcase-contnet h1 {
+        font-size: 2.7rem;
+        line-height: 2rem;
+    }
+    .showcase-contnet p {
+        font-size: 1.2rem;
+    }
+    #tab-1-content .tab-1-content-inner {
+        padding: 1rem 0;
+        grid-template-columns:repeat(1,  1fr);
+        text-align: center;
+        gap: 1rem;
+    }
+    #tab-2-content .tab-2-content-top {
+        display: block;
+        text-align: center;
+        gap: .5rem;
+    }
+    #tab-2-content .tab-2-content-bottom {
+        display: inline-block;
+        gap: .5rem;
+    }
+    .footer .footer-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .btn-xl {
+        font-size: 1.5rem;
+        padding: 1.3rem 1.8rem;
+    }
+    .text-xl {
+        font-size: 1.4rem;
+    }
+    .text-lg {
+        font-size: 1.2rem;
+    }
+    .text-md {
+        font-size: .9rem;
+    }
+}
+@media(max-width: 700px) {
+    #tab-1-content .tab-1-content-inner {
+        padding: 1rem 0;
+        grid-template-columns:repeat(1,  1fr);
+        text-align: center;
+        gap: 1rem;
+    }
+    #tab-2-content .tab-2-content-top {
+        display: block;
+        text-align: center;
+        gap: .5rem;
+    }
+    #tab-2-content .tab-2-content-bottom {
+        display: inline-block;
+        gap: .5rem;
+    }
+    .showcase-contnet h1 {
+        font-size: 1.9rem;
+        line-height: 1.5rem;
+    }
+    .showcase-contnet p {
+        font-size: 1rem;
+    }
+    .showcase:after {
+        height: 70vh;
+        box-shadow: inset 20px 18px 30px #000000, inset -20px -18px 30px #000000;
+    }
+    .btn-xl {
+        font-size: .8rem;
+        padding: .4rem .7rem;
+    }
+    .btn btn-rounded {
+        right: 0;
+        padding: .4rem .4rem;
+        width: 80%;
+    }
+    .imgBox {
+        height: 70%;
+        width: 70%;
+    }
+    .imgBox img {
+        
+        transform: translateY(-15%);
+    }
+    .tab-content {
+        padding: .5rem .5rem;
+        z-index: 3;
+        box-shadow: inset 20px 15px 60px #000000, inset -20px -15px 60px #000000;
+    }
+    .container {
+        padding: 0 0;
+    }
+    /*.table {
+        width: 100%;
+        margin-top: .5rem;
+        font-size: 50%;
+    }
+    .table thead th {
+        padding: .5rem;
+        font-size: 90%;
+    }
+    .table tbody tr td {
+        padding: .5rem .5rem;
+    }
+    .table thead td {
+        padding: .5rem 5rem;
+    }*/
+    .showcase-top img {
+        width: 70%
+    }
+    .text-center{
+        padding-top: .5rem;
+    }
+    .text-lg {
+        font-size: .9rem;
+        padding: 0.8rem 2rem;
+    }
+    
+}
+

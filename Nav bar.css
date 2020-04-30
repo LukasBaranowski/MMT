@@ -1,0 +1,53 @@
+/*NAV BAR*/
+.main{
+    background: linear-gradient(0deg, #6dd1ff, #20b7ff);
+    box-shadow:0 0 25px rgb(44, 43, 43), inset 2px 5px 35px rgba(0,0,0,.5);
+}
+.menu {
+	height: 0vh;
+	margin: 20px;
+	letter-spacing: 1px;
+	align-items: center;
+	display: flex;
+	position: relative;
+	justify-content: space-evenly;
+	z-index: 10;
+}
+.menu ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.menu ul li {
+	float: left;
+	width: 200px;
+	height: 40px;
+	background-color: #000;
+	opacity: .8; 
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+	margin: 0px;
+	
+}
+.menu ul li a {
+	text-decoration: none;
+	color: rgb(226, 226, 226);
+	display: block;
+	
+}
+.menu ul li a:hover {
+	background-color: rgb(82, 82, 82);
+	opacity: .3;
+}
+.menu ul li ul li {
+	display: none;
+}
+.menu ul li:hover ul li {
+	display: block;
+}
+@media (max-width: 991px) {
+	.menu {
+		visibility: hidden;
+	}
+}

@@ -1,0 +1,103 @@
+
+.big-m ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background:#000;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    height: 150px;
+    z-index: 100;
+}
+.big-m ul li {
+    list-style: none;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #000;
+    transform: rotate(45deg);
+    transition: .5s;
+    margin: -100px;
+    overflow: hidden;
+    opacity: .5;
+}
+.big-m ul li:hover {
+opacity: 1;
+}
+.big-m ul li.item1 {
+    bottom: 0;
+    left: 0;  
+}
+.big-m ul li.item2 {
+    top: 0;
+    left: 25%;  
+}
+.big-m ul li.item3 {
+    bottom: 0;
+    left: 50%;  
+}
+.big-m ul li.item4 {
+    top: 0;
+    left: 75%;  
+}
+.big-m ul li.item5 {
+    bottom: 0;
+    left: 100%;  
+}
+.big-m ul li .bg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-45deg) scale(1.4);
+    transition: 1s;
+}
+.big-m ul li .bg:hover {
+    transform: rotate(-45deg) scale(1.7);
+}
+.big-m ul li.item1 .bg {
+    background: url(bg1.jpg);
+    background-size: cover;
+}
+.big-m ul li.item2 .bg {
+    background: url(bg2.jpg);
+    background-size: cover;
+}
+.big-m ul li.item3 .bg {
+    background: url(bg3.jpg);
+    background-size: cover;
+}
+.big-m ul li.item4 .bg {
+    background: url(bg4.jpg);
+    background-size: cover;
+}
+.big-m ul li.item5 .bg {
+    background: url(bg5.jpg);
+    background-size: cover;
+}
+@media (max-width: 996px) {
+    .big-m ul {
+        width: 300px;
+        height: 75px;
+        top: 50%;
+        left: 50%;
+    }
+    .big-m ul li {
+        width: 100px;
+        height: 100px;
+        margin: -50px;
+    }
+}
+@media (max-width: 700px) {
+    .big-m ul {
+        width: 200px;
+        height: 50px;
+        top: 50%;
+        left: 50%;
+    }
+    .big-m ul li {
+        width: 66.6px;
+        height: 66.6px;
+        margin: -33.2px;
+    }
+}
