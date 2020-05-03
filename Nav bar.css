@@ -46,6 +46,14 @@
 .menu ul li:hover ul li {
 	display: block;
 }
+.menu li i {
+    color: #fff;
+    font-size: 20px;
+}
+.menu li i:hover {
+    font-size: 22px;
+    cursor: pointer;
+}
 @media (max-width: 991px) {
 	.menu {
 		visibility: hidden;
