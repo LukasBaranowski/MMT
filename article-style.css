@@ -6,32 +6,58 @@
     padding: 0;
     box-sizing: border-box;
 }
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
 html {
     font-family: 'Raleway', sans-serif;
 }
 img {
     width: 100%;
+    padding: 0 3rem 1rem
 }
 body {
     width: 100%;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     background: #333;
-    padding: 0 1.5rem;
+    padding: 0 2rem 2rem;
+}
+.container-aritcle-main {
+    position: relative;
+    padding: 10rem 2rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.most-popular-section {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 8rem 2rem;
+}
+.most-popular-section h2 {
+    color: rgb(114, 114, 114);
+    text-align: start;
+    padding: .5rem 0;
 }
 .container {
     width: 100%;
-    padding: 2rem 0;
+    padding: 2rem 10rem;
     background: rgb(46, 45, 45);
     box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, .6);
-    display: flex;
+    display: block;
     align-items: center;
     border-radius: .8rem;
 }
 .container:hover {
     box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, .9);
-    cursor: pointer;
 }
 .container:hover .container-img img {
     opacity: .9;
@@ -62,20 +88,19 @@ body {
     color: rgba(79, 78, 78, 0.5);
     font-size: 1.3rem;
     font-weight: 600;
-    padding: .2rem 1rem;
+    padding: 2rem 1rem;
 }
 .container-title {
     font-size: 1.7rem;
-    padding: .5rem 1rem;
+    padding: .5rem 3rem;
     text-transform: uppercase;
     color: rgb(114, 114, 114);
 }
 .container-text {
     font-size: 1.2rem;
     color:  rgb(114, 114, 114);
-    padding: 2rem 1rem 1rem;
+    padding: 2rem 3rem 1rem;
 }
-
 .container-article .icons {
     display: flex;
     right: 0;
@@ -85,17 +110,79 @@ body {
     color: #fff;
     padding: 0 1rem;
     position: relative;
-    
+    padding: 0 0 0 5rem
 }
 .container-article .icons i {
     letter-spacing: .7rem;
 }
-.container-article .icons:hover {
+.container-article .icons i:hover {
     cursor: pointer;
     color: rgb(37, 117, 178);
 }
+.table tbody tr td {
+    color: #999;
+    padding: .8rem 1.2rem;
+    text-align: center;
+}
+.table tbody tr td a {
+    text-decoration: none;
+    color: #999;
+}
+.table tbody tr td a:hover {
+    cursor: pointer;
+    color: #fff;
+}
+.table tbody tr td:first-child{
+    text-align: left;
+}
+.table tbody tr:nth-child(odd) {
+    background: #222;
+}
+/************footer***************/
+.footer {
+    max-width: 90%;
+    margin: 8rem auto;
+    overflow: auto;
+}
+.footer, .footer a {
+    color: #999;
+    font-size: .9rem;
+}
+.footer p {
+    margin-bottom: 1.5rem;
+}
+.footer .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+.footer li {
+    line-height: 1.9;
+}
+
+/***********text style************/
+.text-xl {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.text-lg {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.text-center{
+    text-align: center;
+    padding-top: 2rem;
+}
+.text-dark {
+    color: #999;
+}
+.text-md {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
 @media (max-width: 1068px) {
-    .container-date span{
+    .container-date span {
         font-size: .8rem;
         padding: .1rem 1rem;
     }
@@ -109,6 +196,20 @@ body {
     .container-img:before{
         height: 100%;
         box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, .5);
+    }
+    img {
+    width: 100%;
+    padding: 0 2rem 1rem
+    }
+    body {
+    padding: 0 1rem 1rem;
+    }
+    .most-popular-section {
+    padding: 3rem 1rem;
+    }
+    .container {
+    
+    padding: 1rem 5rem;
     }
 }
 @media (max-width: 820px) {
@@ -131,8 +232,14 @@ body {
         height: 98%;
         box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, .5);
     }
-    .container .icons {
-        transform: translateX(80%);
+    .footer .footer-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container-aritcle-main {
+        padding: 5rem .2rem;
+    }
+    .container-aritcle-main {
+        display: block;
     }
 }
 @media (max-width: 420px) {
@@ -165,8 +272,7 @@ body {
         height: 97%;
         box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, .5);
     }
-    .container .icons {
-        transform: translate(60%, 25%);
+    .container-article .icons {
+        padding: 0 0 0 2rem; 
     }
 }
-
