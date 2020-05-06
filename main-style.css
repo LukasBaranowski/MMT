@@ -181,7 +181,7 @@ img {
     margin-top: 2rem;
     border-collapse: collapse;
     border-spacing: 0;
-}
+}*/
 .table thead th {
     text-transform: uppercase;
     padding: .8rem;
@@ -196,7 +196,7 @@ img {
 }
 .table tbody tr:nth-child(odd) {
     background: #222;
-}*/
+}
 /************footer***************/
 .footer {
     max-width: 75%;
@@ -300,11 +300,6 @@ img {
         text-align: center;
         gap: 1rem;
     }
-    #tab-2-content .tab-2-content-top {
-        display: block;
-        text-align: center;
-        gap: .5rem;
-    }
     #tab-2-content .tab-2-content-bottom {
         display: inline-block;
         gap: .5rem;
@@ -332,15 +327,6 @@ img {
         grid-template-columns:repeat(1,  1fr);
         text-align: center;
         gap: 1rem;
-    }
-    #tab-2-content .tab-2-content-top {
-        display: block;
-        text-align: center;
-        gap: .5rem;
-    }
-    #tab-2-content .tab-2-content-bottom {
-        display: inline-block;
-        gap: .5rem;
     }
     .showcase-contnet h1 {
         font-size: 1.9rem;
@@ -378,21 +364,6 @@ img {
     .container {
         padding: 0 0;
     }
-    /*.table {
-        width: 100%;
-        margin-top: .5rem;
-        font-size: 50%;
-    }
-    .table thead th {
-        padding: .5rem;
-        font-size: 90%;
-    }
-    .table tbody tr td {
-        padding: .5rem .5rem;
-    }
-    .table thead td {
-        padding: .5rem 5rem;
-    }*/
     .showcase-top img {
         width: 70%
     }
