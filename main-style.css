@@ -175,12 +175,27 @@ img {
     text-align: center;
     color: #fff;
 }
-/*Awesome Table if needed*/
-/*.table {
+/******Most popular section in tab 2****/
+.most-popular-section {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.most-popular-section h2 {
+    color: rgb(114, 114, 114);
+    text-align: start;
+    padding: .5rem 0;
+}
+/******Table in Tab 2******/
+.table {
     width: 100%;
     margin-top: 2rem;
     border-collapse: collapse;
     border-spacing: 0;
+}
+/*.table thead th {
+    text-transform: uppercase;
+    padding: .8rem;
 }*/
 .table tbody tr td {
     color: #999;
@@ -304,6 +319,11 @@ img {
         text-align: center;
         gap: 1rem;
     }
+    /*#tab-2-content .tab-2-content-top {
+        display: block;
+        text-align: center;
+        gap: .5rem;
+    }*/
     #tab-2-content .tab-2-content-bottom {
         display: inline-block;
         gap: .5rem;
@@ -378,6 +398,4 @@ img {
         font-size: .9rem;
         padding: 0.8rem 2rem;
     }
-    
 }
-
