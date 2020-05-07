@@ -12,7 +12,7 @@
     align-items: center;
     border-radius: .8rem;
     height: 70vh;
-    margin: 5rem;
+    margin: 3rem;
 }
 .container-article:hover {
     box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, .9);
@@ -47,23 +47,29 @@
 .container-date span {
     display: block;
     color: rgba(79, 78, 78, 0.5);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 600;
     padding: .2rem 1rem;
+    text-align: start;
+}
+.container-article:hover .container-date span {
+    color: rgba(255, 255, 255, 0.772);  
 }
 .container-title {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     padding: .5rem 1rem;
     text-transform: uppercase;
     color: rgb(114, 114, 114);
+    text-align: start;
 }
 .container-article:hover .container-title {
     color: rgba(255, 255, 255, 0.772);
 }
 .container-text {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color:  rgb(114, 114, 114);
-    padding: 2rem 1rem 1rem;
+    padding: .6rem 1rem .6rem;
+    text-align: start;
 }
 .container-article:hover .container-text {
     color: rgba(255, 255, 255, 0.772);
@@ -85,7 +91,7 @@
     letter-spacing: .7rem;
 }
 .container-article:hover .icons{
-    visibility: visible;
+    /*visibility: visible;*/
     color: rgb(37, 117, 178);
 }
 @media (max-width: 1068px) {
@@ -200,4 +206,3 @@
         transform: translate(60%, 25%);
     }
 }
-
