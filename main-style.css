@@ -168,7 +168,7 @@ img {
 #tab-2-content .tab-2-content-bottom {
     margin-top: 1rem;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 4fr 1.5fr;
     gap: .5rem;
     align-items: center;
     justify-content: center;
@@ -398,4 +398,5 @@ img {
         font-size: .9rem;
         padding: 0.8rem 2rem;
     }
+    
 }
