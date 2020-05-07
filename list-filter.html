@@ -5,16 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Compiled and minified CSS from Materializecss.com -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <title>MMT Content Search</title>
+    <script src="https://kit.fontawesome.com/e37311781e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Nav bar.css">
+    <link rel="stylesheet" href="burger menu.css">
+    <title>MMT - Content Search</title>
 </head>
 <body>
+    <nav class="menu">
+        <ul class="menu-links menu-active">
+            <li><a class="main" href="#">Main</a></li>
+            <li><a class="nav-btn" href="#">Content</a>
+                <ul>
+                    <li><a class="nav-btn" href="#">Books</a></li>	
+                    <li><a class="nav-btn" href="#">Articles</a></li>
+                    <li><a class="nav-btn" href="#">Videos</a></li>
+                </ul>
+            </li>
+            <li><a class="nav-btn" href="#">Media</a>
+                <ul>
+                    <li><a class="nav-btn" href="#">Videos</a></li>
+                    <li><a class="nav-btn" href="#">News</a></li>
+                    <li><a class="nav-btn" href="#">Podcasts</a></li>
+                </ul>
+            </li>
+            <li><a class="nav-btn" href="#">Others</a>
+                <ul>
+                    <li><a class="nav-btn" href="#">Videos</a></li>
+                    <li><a class="nav-btn" href="#">Photos</a></li>
+                </ul>
+            </li>
+            <li><a class="nav-btn" href="#">Contact</a></li>
+            <!--<li><a class="nav-btn" href="list-filter.html"><i class="fa fa-search" aria-hidden="true"></i></a></li>-->
+        </ul>
+    </nav>
+    <!--BURGER MENU-->
+    <div class="menu-container">
+        <input type="checkbox" class="toggler">
+        <div class="burger">
+            <div></div>
+        </div>
+        <div class="menu-second">
+            <div>
+                <div>
+                    <ul>
+                        <li><a class="burger-btn" href="#">Main</a></li>
+                        <li><a class="burger-btn" href="#">Books</a></li>
+                        <li><a class="burger-btn" href="#">Articles</a></li>
+                        <li><a class="burger-btn" href="#">Videos</a></li>
+                        <li><a class="burger-btn" href="#">Contact</a></li>
+                        <li><a class="burger-btn" href="#">Search</a></li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <div class="container">
         <h1 class="center-align">
             Content search
         </h1>
         <input type="text" id="filter-input" placeholder="Search for books articles and other materials...">
         <ul id="names" class="collection with-header">
-            
             <li class="collection-header">
                 <h5>A</h5>
             </li>
@@ -30,7 +81,6 @@
             <li class="collection-item">
                 <a href="#">Anna Karenina</a>
             </li>
-            
             <li class="collection-header">
                 <h5>B</h5>
             </li>
@@ -46,7 +96,6 @@
             <li class="collection-item">
                 <a href="#">Baranowski Lukasz</a>
             </li>
-            
             <li class="collection-header">
                 <h5>C</h5>
             </li>
@@ -59,9 +108,7 @@
             <li class="collection-item">
                 <a href="#">Coins and bills</a>
             </li>
-                
-            <li class="collection-header">
-                <h5>D</h5>   
+                <h5>D</h5>
             </li>
             <li class="collection-item">
                 <a href="#">D-Day</a>
@@ -72,94 +119,31 @@
             <li class="collection-item">
                 <a href="#">Gogs vs Cats</a>
             </li>
-
-            <li class="collection-header">
                 <h5>E</h5>
-            </li>
-
-            <li class="collection-header">
                 <h5>F</h5>
-            </li>
-
-            <li class="collection-header">
                 <h5>G</h5>
-            </li>
-
-            <li class="collection-header">
                 <h5>H</h5>
-            </li>
-
-            <li class="collection-header">
                 <h5>I</h5>
-            </li>
-
-            <li class="collection-header">
                 <h5>J</h5>
-            </li>
-
-            <li class="collection-header">
                 <h5>K</h5>
-            </li>
-
-            <li class="collection-header">
                 <h5>L</h5>
-            </li>
-
-            <li class="collection-header">
                 <h5>M</h5>
-            </li>
-
-            <li class="collection-header">
                 <h5>N</h5>
-            </li>
-
-            <li class="collection-header">
                 <h5>O</h5>
-            </li>
-
-            <li class="collection-header">
                 <h5>P</h5>
-            </li>
-            
-            <li class="collection-header">
                 <h5>Q</h5>
-            </li>
-
-            <li class="collection-header">
                 <h5>R</h5>
-            </li>
-
-            <li class="collection-header">
                 <h5>S</h5>
-            </li>
-
-            <li class="collection-header">
                 <h5>T</h5>
-            </li>
-
-            <li class="collection-header">
+                    <li class="collection-item">
+                        <a href="https://www.project-syndicate.org/commentary/modern-monetary-theory-is-not-helicopter-money-by-yeva-nersisyan-and-l-randall-wray-2020-04?fbclid=IwAR3DXoKX1mKD83y-lzTrFUMa77oCeO4U_cGCzaQYHXDRdkk050CnkE1Wrek">The Myth of “Helicopter Money”</a>
+                    </li>
                 <h5>U</h5>
-            </li>
-
-            <li class="collection-header">
                 <h5>V</h5>
-            </li>
-
-            <li class="collection-header">
                 <h5>W</h5>
-            </li>
-
-            <li class="collection-header">
                 <h5>X</h5>
-            </li>
-
-            <li class="collection-header">
                 <h5>Y</h5>
-            </li>
-
-            <li class="collection-header">
                 <h5>Z</h5>
-            </li>
         </ul>
     </div>
 
